@@ -1,19 +1,17 @@
-import React, { Component } from "react";
-import Sidebar from "./components/Sidebar";
-import Video from "./components/Video";
-import { Provider } from "react-redux";
-import store from "./store";
+import React from "react";
 import "./App.css";
+import Profile from "./components/Profile";
+import Login from "./components/Login";
+import ChangeColor from "./components/ChangeColor";
 
-class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <Sidebar />
-        <Video />
-      </Provider>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Profile />
+      <Login />
+      <ChangeColor />
+    </div>
+  );
 }
 
 export default App;
